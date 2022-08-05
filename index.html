@@ -5,32 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="shortcut icon" href="icon-moon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/icon-moon.png" type="image/x-icon">
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="./css/login.css">
 </head>
 <body>
     <main class="main-login">
         <section class="left-login">
             <h1>Faça seu login <br>Entre para o nosso time!</h1>
-            <img class="animation-login" src="cat-astronaut-animation.svg" alt="Animation">
+            <img class="animation-login" src="./images/cat-astronaut-animation.svg" alt="Animation">
         </section>
         <section class="right-login">
-            <div class="card-login">
+            <form class="card-login">
                 <h1>LOGIN</h1>
-                <div class="textfield">
-                    <label for="usuario">Usuário </label>
-                    <input type="text" name="Usuario" placeholder="Digite seu usuario">
-                </div>
-                <div class="textfield">
+
+                <fieldset class="textfield">
+                    <label for="usuario">Email </label>
+                    <input required type="email" name="Usuario" placeholder="Digite seu email">
+                </fieldset>
+
+                <fieldset class="textfield">
                     <label for="senha">Senha </label>
-                    <input type="password" name="Usuario" placeholder="Digite sua senha">
-                </div>
-                <input class="btn-login" type="button" value="Login">
+                    <input required type="password" name="Usuario" placeholder="Digite sua senha">
+                </fieldset>
+
+                <button class="btn-login">Login
+                <button class="btn-register">Cadastro
             </div>
         </section>
+        
     </main>
-    <footer id="footer">
-        &copy; Developed by DevLucaralho
-    </footer>
+    
 </body>
 </html>

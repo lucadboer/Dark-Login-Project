@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="shortcut icon" href="../images/icon-moon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/cadastro.css">
+</head>
+<body>
+
+    <main class="main_container">
+
+        <header class="menu">
+            <h1>Faça seu cadastro</h1>
+            <h2>Desfrute da nossa plataforma!</h2>
+            <img src="../images/register-animate.svg" alt="">
+        </header>
+
+        <form class="main_form">
+
+            <fieldset id="form-register" class="fieldset">
+
+                <h1>Cadastro</h1>
+
+                <div class="campo name-place">
+                    <label for="name">Nome </label>
+                    <input name="user_name" id="name" type="text" placeholder="Digite seu nome"
+                    required autofocus autocomplete="name">
+                </div>
+
+                <div class="campo email-place">
+                    <label for="email">Email </label>
+                    <input name="email" name="" id="email" type="email" placeholder="Digite seu email"
+                    required autocomplete="email" minlength="7" maxlength="100">
+                </div>
+
+                <div class="campo password-place">
+                    <label for="password">Senha </label>
+                    <input name="password" id="password" type="password" placeholder="Digite sua senha"
+                    required minlength="5" maxlength="20" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="O tamanho da senha é no mínimo 8 caracteres e no máximo 20 caracteres incluindo números, letra minúscula e maiúscula">
+                </div>
+
+                <div class="campo date-place">
+                    <label for="date">Data de Nascimento </label>
+                    <input name="date" id="date" type="date" required>
+                </div>
+
+                <button form="form-register" class="btn_submit" type="submit">Cadastrar</button>
+
+            </fieldset>
+
+        </form>
+
+    </main>
+
+</body>
+</html>
