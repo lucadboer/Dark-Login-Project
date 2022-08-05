@@ -4,5 +4,5 @@ btn_register.addEventListener('click', load_page)
 
 function load_page(event) {
     event.preventDefault();
-    window.location = '../pages/registration.html'
+    window.location = 'pages/registration.html'
 }
